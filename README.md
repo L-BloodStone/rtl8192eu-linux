@@ -31,6 +31,12 @@ Also, make sure you have headers, build, dkms and git packages installed.
 
 ```sudo zypper install -t pattern devel_C_C++ && sudo zypper install dkms git```
 
+##### Raspberry Pi:
+
+```sudo apt-get install git raspberrypi-kernel-headers build-essential dkms git```
+
+Also set `CONFIG_PLATFORM_I386_PC = n` and `CONFIG_PLATFORM_ARM_RPI = y` in the `Makefile`.
+
 ### Automated (re)install 
 
 Run from driver directory:
